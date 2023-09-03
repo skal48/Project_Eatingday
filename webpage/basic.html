@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon32.png"> <!--탭아이콘--><!--  img 투명 바꾸고 싶음-->
+    <link rel="apple-touch-icon-precomposed" href="/images/favicon32.png"> <!-- 애플 유저 위한 아이콘-->
+    <title>EatingDay</title>
+</head>
+<body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            height: auto;
+        }
+    </style>
+    <header topmargin="0" > <!-- 페이지 상단 메뉴 -->
+        <style>
+            @font-face {
+                font-family: 'OTWelcomeRA';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+            /* 상단바 폰트 */
+            nav {    
+                font-size: 18pt;
+                font-family: 'OTWelcomeRA',Arial;
+                font-weight: 800;
+                position: relative;
+            }
+            nav ul{
+                margin: auto;
+                width: auto;
+            }
+            nav li{                
+            }
+            nav a{
+                font-style: #4f200d;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+    	        -webkit-box-sizing: border-box;
+            }
+            nav li:last-child a{
+        	    border-right: 0;
+            }
+            nav a:hover, nav a:active{
+                color: black;
+            }
+            nav a#pull{
+    	        display: none;
+            }
+            html {
+                -webkit-touch-callout:none;
+                -webkit-user-select:none;
+                -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+            }
+
+            ul{
+                /*list-style-type: none;*/
+                margin: 0;
+                padding: 0;
+                background-color: #f6f1e9;
+                text-align: center;
+            }
+            li{
+                /*position: relative;*/
+                display: inline-block;      
+                                          
+            }
+            
+            li a{
+                color: #4f200d;
+                text-align: center;
+                padding: 14.5px 16px;
+                text-decoration: none;
+                line-height: 80px;
+                margin-left: 50px;
+                margin-right: 50px;
+                
+            }
+            /* 마우스 가져다대면 변하는 색,동작 */
+            li a:hover{
+                /*color: #597812;*/
+                color: black;               
+            }
+            /* 상단바 색, 높이 변경 */
+            .topbar {
+            width: 5000px;
+            height: 76px;
+            text-align: center;
+            max-width: 100%;
+            background-position: center;
+            background-size: cover;
+            background-color: #f6f1e9;color: #4f200d;
+            position: absolute;z-index: 1;
+            }
+            li#logo{
+                width: 212.80px;
+                height: 42.6px;
+                line-height: 60px;
+            }
+            a#logo_a {
+                margin-top: 20px;
+                text-align: center;
+                padding-bottom: 0px;
+               
+
+                
+            }
+            div ul a > img{
+                padding-top: 10px;
+            }
+        </style>
+    
+        <div class="topbar">
+            <nav class="topbar">
+                <ul class="topbar">
+                    <li id="logo"><a hrref="#" id="logo_a"><img src="/images/logoremovebg.png" height="50px"></a></li>
+                    <li><a href="#">랜덤메뉴</a></li>
+                    <li><a href="#">친구야 밥먹자</a></li>
+                    <li><a href="#">레시피</a></li>
+                    <li><a href="#">맛집</a></li>
+                </ul>
+                <a id="pull" href="#"></a>
+            </nav>
+        </div>
+
+    </header> 
+
+    <main> <!--페이지 본문 내용-->
+    <style> 
+        .outline {
+            margin: 0px 100px;
+            border-right: 1px solid lightgrey;
+            border-left: 1px solid lightgrey;
+            padding: 76px 0px;
+            height: auto;
+            text-align: center;
+            /* width: 100%; */
+
+        }
+        .pict {
+            margin: 0px 200px;
+            box-sizing: border-box;
+            width:80%;
+            height: 480px;
+            text-align: center;
+            
+            background-image: url(/images/main_images/main1.jpg) ;
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            -moz-box-sizing: border-box;
+    	    -webkit-box-sizing: border-box;
+        }   
+        .search {
+            border: 3px solid #ff8400;
+            border-radius: 10px;
+            height: 30px;
+            margin-top: 380px;
+            max-height: 480px;
+            text-align: center;
+            
+        }
+       
+        
+    </style>
+
+    <div class="outline">
+        <div class="pict">
+            <input type="text" class="search" size="70px" placeholder="맛집을 검색해보세요"> 
+            <input type="submit" class="search_submit">
+            <label for="search_submit"></label> 
+
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+        
+
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
