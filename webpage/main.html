@@ -39,24 +39,31 @@
             .top_picture {
                 padding-top: 160px;
                 width: 100%;
-                height: 760px;
-                background-image: url('https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main-banner_01.png?raw=true');
+                height: 450px;
+                background-image: url('https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main-banner_01.png?raw=true'); 
+                /* background-repeat: space;
+                background-size: 100% 660px;               */
                 background-repeat: no-repeat;
-                background-size: cover;              
+                background-size: cover;        
             }
             .toplogo {                
             }
             .search_wrapper {
                 padding-top: 115px;
+                padding-left: 80px
+            }      
+            .search-wrapper > form{
+                height: 89.75px;
+                
             }
             .search {
                 border: 0px;
-                width: 890px;
+                width: 46.3%;
                 height: 83px;
                 border-radius: 50px;
                 font-size: x-large;
                 font-weight: 400;
-                padding-left: 70px;
+                /* padding-left: 80px; */
             }
             .search:focus{
                 outline: none;
@@ -65,17 +72,14 @@
                 font-family: 'Noto Sans KR', sans-serif;
                 font-size: 25px;             
             }
-            .search_submit {
+            .search_submit {               
                 border: none;
                 width: 82px;
                 height: 82px;    
                 /* -webkit-appearance: none; */ /*원래 모양 없애는것*/
-                text-align: center;
                 background-color: white;
                 border-radius: 0 50px 50px 0;
-                position: sticky; top: 563px; right: 567px;
-               
-                
+                position: relative; top: 6.5px; right:100px;            
             }
         </style>
         <div class="wrapper1">
@@ -87,7 +91,7 @@
                 <div class="search_wrapper" style="text-align : center;">
                     <form action="https://search.naver.com/search.naver" method="get">
                         <input type="hidden" name="ie" value="UTF-8">
-                        <input type="text" class="search"     placeholder="&emsp;&nbsp;맛집을 입력하세요"  >
+                        <input type="text" class="search" placeholder="&emsp;&emsp;맛집을 입력하세요" >
                         <button type="submit" class="search_submit"><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_11.png?raw=true" width="max-width" height="max-height"></button>
                     </form>
                 </div>                
@@ -95,6 +99,73 @@
         </div>
     </header> 
     <main><!--메뉴아이콘 인기키워드 -->
+        <style>
+            .main_wrapper {
+                height: 881px;
+            }
+            .main_space{
+                height: 444px; 
+                background-color: white;
+            }
+            .main_picture{
+                width: 100%;
+                height: 437px;
+                background-image: url('https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_33.png?raw=true');
+                background-repeat: no-repeat;
+                background-size: cover;         
+            }
+            ul {
+                text-align: center;
+            }
+            li {
+                display: inline-block;
+                
+            }
+            li > div {               
+                border: 1px solid gray;
+                border-radius: 25px;
+                width: 233px;
+                height: 273px;
+                text-align: center;
+                padding-top: 58.5px;
+            }
+            li img{
+                width: 107px;
+                height: 107px;
+            }
+
+
+        </style>
+        <div class="main_wrapper">
+            <div class="main_space">
+                <ul class="list">
+                    <li class="random">
+                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_23.png?raw=true"></div></li>
+                    <li class="recipe">
+                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_15.png?raw=true"></div></li>
+                    <li class="freind">
+                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_17.png?raw=true"></div></li>
+                    <li class="resto">
+                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_20.png?raw=true"></div></li>
+                    <li class="help">
+                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_26.png?raw=true"></div></li>
+                </ul>
+            </div>
+            <div class="main_picture">
+                <div class="empty_logo"></div>
+                <div class="keyword_text"></div>
+                <div class="keyword_main"></div>
+                    <div class="keyword_year"></div>
+                    <div class="keyword_month"></div>
+                    <div class="keyword"></div>  <!-- 각 키워드도 div 요소로 해야하나..?-->
+                </div>
+            </div>
+
+        </div>
+
+
+
+
 
     </main>
     <footer><!-- 여기는 어때요 맛집-->
