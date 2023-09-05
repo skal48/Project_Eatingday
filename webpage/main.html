@@ -8,8 +8,9 @@
     <link rel="apple-touch-icon-precomposed" href="https://github.com/skal48/Project_Eatingday/blob/dev/images/favicon32.png?raw=true"> <!-- 애플 유저 위한 아이콘-->
     <title>EatingDay</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif+KR:wght@500&display=swap');
         * {
-            border: 1px solid black;
+            /* border: 1px solid black;  */
             margin: 0px;
             padding: 0px;
         }
@@ -20,67 +21,85 @@
         header {
             height: auto;
         }
-    
     </style>
-    <header><!-- 페이지 상단 메뉴 --><!--span 인라인요소 -->
+    <header><!-- 페이지 상단 메뉴 검색 바까지--><!--span 인라인요소 -->
         <style>
             .wrapper1 {
             }
             .toptop {
-               
                 width: 100%;
                 height: 110px;
                 background-color: white;
-                padding: 27.5px 20.5% ;
-                
             }
-            .toptoplogo {
-                width: 6%;
-                height: 55px;
-                background-image: url(https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_03.png?raw=true);
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: 100% 100%;
-
-
+            .toptoplogo {             
+                padding-top: 22.5px;            
+            }
+            .toptoplogo > img {              
             }
             .top_picture {
-                
+                padding-top: 160px;
+                width: 100%;
                 height: 760px;
-                background-image: url(https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main-banner_01.png?raw=true);
+                background-image: url('https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main-banner_01.png?raw=true');
+                background-repeat: no-repeat;
+                background-size: cover;              
+            }
+            .toplogo {                
+            }
+            .search_wrapper {
+                padding-top: 115px;
+            }
+            .search {
+                border: 0px;
+                width: 890px;
+                height: 83px;
+                border-radius: 50px;
+                font-size: x-large;
+                font-weight: 400;
+                padding-left: 70px;
+            }
+            .search:focus{
+                outline: none;
+            }
+            .search::placeholder{
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size: 25px;             
+            }
+            .search_submit {
+                border: none;
+                width: 82px;
+                height: 82px;    
+                /* -webkit-appearance: none; */ /*원래 모양 없애는것*/
+                text-align: center;
+                background-color: white;
+                border-radius: 0 50px 50px 0;
+                position: sticky; top: 563px; right: 567px;
                
                 
             }
-            .toplogo {
-                
-            }
-            .search button{
-                background-color: rgba(0, 0, 0, 0);
-            }
-
         </style>
-
-
-
         <div class="wrapper1">
             <div class="toptop"> 
-                <div class="toptoplogo"></div>           
+                <div class="toptoplogo" style="text-align : center; max-height: 110px;" ><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_03.png?raw=true" width="122px" height="55px"></div>           
             </div>
             <div class="top_picture">
-                <div class="toplogo"></div>
-                <div class="search">
+                <div class="toplogo" style="text-align : center;"><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_07.png?raw=true"> </div>
+                <div class="search_wrapper" style="text-align : center;">
                     <form action="https://search.naver.com/search.naver" method="get">
                         <input type="hidden" name="ie" value="UTF-8">
-                        <input type="text" class="search" size="70px" placeholder="맛집을 검색해보세요">
-                        <button type="submit" class="search_submit"><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_11.png?raw=true"</button>
+                        <input type="text" class="search"     placeholder="&emsp;&nbsp;맛집을 입력하세요"  >
+                        <button type="submit" class="search_submit"><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_11.png?raw=true" width="max-width" height="max-height"></button>
                     </form>
                 </div>                
             </div>
         </div>
-
     </header> 
-    <main></main>
-    <footer></footer>
+    <main><!--메뉴아이콘 인기키워드 -->
+
+    </main>
+    <footer><!-- 여기는 어때요 맛집-->
+
+    </footer>
     
 </body>
 </html>
