@@ -7,12 +7,16 @@
     <link rel="icon" href="https://github.com/skal48/Project_Eatingday/blob/dev/images/favicon32.png?raw=true"> <!--탭아이콘--><!--  img 투명 바꾸고 싶음-->
     <link rel="apple-touch-icon-precomposed" href="https://github.com/skal48/Project_Eatingday/blob/dev/images/favicon32.png?raw=true"> <!-- 애플 유저 위한 아이콘-->
     <title>EatingDay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif+KR:wght@500&display=swap');
+
         * {
             /* border: 1px solid black;  */
             margin: 0px;
             padding: 0px;
+            font-family: 'Noto Sans KR', sans-serif;
         }
     </style>
 </head>
@@ -91,7 +95,7 @@
                 <div class="search_wrapper" style="text-align : center;">
                     <form action="https://search.naver.com/search.naver" method="get">
                         <input type="hidden" name="ie" value="UTF-8">
-                        <input type="text" class="search" placeholder="&emsp;&emsp;맛집을 입력하세요" >
+                        <input type="text" class="search" placeholder="&emsp;&emsp;지역을 입력하세요" >
                         <button type="submit" class="search_submit"><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_11.png?raw=true" width="max-width" height="max-height"></button>
                     </form>
                 </div>                
@@ -112,56 +116,143 @@
                 height: 437px;
                 background-image: url('https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_33.png?raw=true');
                 background-repeat: no-repeat;
-                background-size: cover;         
+                background-size: cover;       
+                position: relative;  
             }
             ul {
+                position: relative;
+                top: -22px;
                 text-align: center;
             }
             li {
-                display: inline-block;
+                height: 232px;
+                display: inline-block; /*232*/
                 
             }
             li > div {               
                 border: 1px solid gray;
                 border-radius: 25px;
                 width: 233px;
-                height: 273px;
+                height: 217px;
                 text-align: center;
+                background-color: white;
                 padding-top: 58.5px;
+                margin:0 6.5px;
+                -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 4px -19px rgba(0,0,0,0.04); 
+                box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 4px -19px rgba(0,0,0,0.04);
+
             }
             li img{
                 width: 107px;
                 height: 107px;
             }
-
+            .lg_text {
+                font-weight: 900;
+                font-size: 23px;   
+                margin-top: 32px;             
+            }
+            .sml_text {
+                font-size: 12px;
+            }
+            
+            .empty_logo{
+                position: absolute;
+                left: -80px;
+                bottom: -70px;
+            }
+            .keyword_text1{
+                font-family:'Noto Sans KR', sans-serif;;
+                font-size: 50px;
+                color: white;
+                font-weight: 50;
+                position: absolute;
+                left: 650px;
+                top: 80px;  
+                line-height : 50px;      /* 행간 */       
+                letter-spacing : 0.3px;  /* 자간*/
+            }
+            .keyword_text2{
+                font-size: 50px;
+                color:#ff8400;
+                font-weight: 900;
+                position: absolute;
+                left: 650px;
+                top: 170px
+            }
+            .keyword_main {
+                width: 685px;
+                height: 281px;
+                border: 1px solid white;
+                position: absolute;
+                left: 1200px;
+                top: 158px;
+            }
+            .keyword_main > div{
+                
+                color: white;
+                border-radius: 30px;               
+            }
+            .keyword_year, .keyword_month {
+                width: ;
+                height: ;
+                display: inline-block;
+                background-color: black;
+            }
+            .keyword {
+                width: 683px;
+                height: 283px;
+                background-color: white;
+            }
 
         </style>
         <div class="main_wrapper">
             <div class="main_space">
                 <ul class="list">
                     <li class="random">
-                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_23.png?raw=true"></div></li>
+                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_23.png?raw=true">
+                        <div class="lg_text">랜덤메뉴</div>
+                        <div class="sml_text">매일 새로운 메뉴를 확인해보세요</div>
+                        </div>
+                    </li>
                     <li class="recipe">
-                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_15.png?raw=true"></div></li>
+                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_15.png?raw=true">
+                        <div class="lg_text">레시피</div>
+                        <div class="sml_text">하루를 책임질 레시피를 확인해보세요</div>
+                        </div>
+                    </li>
                     <li class="freind">
-                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_17.png?raw=true"></div></li>
+                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_17.png?raw=true">
+                        <div class="lg_text">친구야 밥먹자</div>
+                        <div class="sml_text">사용자들과 함께를 공유해보세요</div>
+                        </div>
+                    </li>
                     <li class="resto">
-                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_20.png?raw=true"></div></li>
+                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_20.png?raw=true">
+                        <div class="lg_text">맛집</div>
+                        <div class="sml_text">새로운 탐색으로 맛집을 찾아보세요</div>
+                        </div>
+                    </li>
                     <li class="help">
-                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_26.png?raw=true"></div></li>
+                        <div><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_26.png?raw=true">
+                        <div class="lg_text">고객지원</div>
+                        <div class="sml_text">고객지원 서비스입니다.</div>
+                        </div>    
+                    </li>
                 </ul>
             </div>
             <div class="main_picture">
-                <div class="empty_logo"></div>
-                <div class="keyword_text"></div>
-                <div class="keyword_main"></div>
-                    <div class="keyword_year"></div>
-                    <div class="keyword_month"></div>
+                <div class="empty_logo"><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/downfront.png?raw=true"></div>
+                <div class="keyword_text1">맛집찾기 힘들죠? <br>그럴땐,</div>
+                <div class="keyword_text2">인기키워드</div>
+                <div class="keyword_main">
+                    <div class="keyword_year">2023</div> <!-- 날짜 입력받아야함-->
+                    <div class="keyword_month">09</div> <!-- 날짜 입력받아야함-->
                     <div class="keyword"></div>  <!-- 각 키워드도 div 요소로 해야하나..?-->
                 </div>
             </div>
-
         </div>
+
+    </div>
 
 
 
