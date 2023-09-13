@@ -8,8 +8,8 @@
     <link rel="apple-touch-icon-precomposed" href="https://github.com/skal48/Project_Eatingday/blob/dev/images/favicon32.png?raw=true"> <!-- 애플 유저 위한 아이콘-->
     <title>EatingDay</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
     <style>
 
         * {
@@ -130,7 +130,6 @@
                 
             }
             li > div {               
-                border: 1px solid gray;
                 border-radius: 25px;
                 width: 233px;
                 height: 217px;
@@ -219,7 +218,7 @@
                 background-color: white;
             }
 
-        </style>47 274
+        </style>
         <div class="main_wrapper">
             <div class="main_space">
                 <ul class="list">
@@ -268,16 +267,12 @@
         </div>
 
     </div>
-
-
-
-
-
     </main>
     <footer><!-- 여기는 어때요 맛집-->
         <style>
             footer *{
                 border: 1px solid black;
+                text-align: center;
             }
             .bottom {
                 background-color: white;
@@ -286,49 +281,58 @@
                 
             }
             .bottom_content {
+                display: inline-block;
                 width: 1200px;
                 height: 570px;
                 text-align: center; 
-                float: left;
-                margin-left: 326px;
-                margin-top: 188px;
-                position: relative;
+                margin-top: 190px;
+                
             }
-            .recommend_all {
-                width: 1209px;
-                height: 421px;
-                text-align: center;
-                margin-top: 100px;
-
+            .text {
+                
             }
             .bottom_text1{
                 height: 35px;   
                 font-size: 15px;
                 font-style: lightgray;
-                position: absolute; 
+                text-align: left;
+                padding-left: ;
+                
             }
             .bottom_text2{
+                font-family: 'Noto Sans KR', sans-serif;
                 height: 46px;
-                font-size: 20px;
-                font-weight: 400;
-                position: absolute; 
+                font-size: 30px;
+                font-weight: 700;
+                text-align: left;
             }
-            .recommend1 {
-                display: inline-block;
-                width: 363px;
-                height: 423px;
                 
+            .recommend_all {
+                width: 1209px;
+                height: 421px;
+                text-align: center;
+            }
+            .recommend_all ~ div {
+                display: inline-block;             
+                width: 363px;
+                height: 423px;     
+            }
+            .recommend2 {
+                margin-left: 55px;
+                margin-right: 55px;
             }
 
         </style>
         <div class="bottom">
-            <div class="bottom_content">                
+            <div class="bottom_content">   
+                <div class="bottom_text" >            
                     <div class="bottom_text1">오늘의 추천 맛집</div>
-                    <div class="bottom_text2">여기는 어때요?</div>               
+                    <div class="bottom_text2">여기는 어때요?</div>  
+                </div>                
                 <div class="recommed_all">
-                    <div class="recommend1">커리는 커리해</div> <!--글씨 바꿔야함 -->
-                    <div class="recommend1">구디햄버거</div> <!--글씨 바꿔야함 -->
-                    <div class="recommend1">얌얌미트보루</div> <!--글씨 바꿔야함 -->
+                    <div class="recommend1"><a href="#"><img src="#"></a>커리는 커리해</div> <!--글씨 바꿔야함 -->
+                    <div class="recommend2"><a href="#"><img src="#"></a>구디햄버거</div> <!--글씨 바꿔야함 -->
+                    <div class="recommend3"><a href="#"><img src="#"></a>얌얌미트보루</div> <!--글씨 바꿔야함 -->
                 </div>
             </div>
         </div>
