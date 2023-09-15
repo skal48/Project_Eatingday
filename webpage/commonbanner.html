@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+</head>
+<style>
+
+body, nav, ul, li {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Orbit', sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  .gnb {
+    padding-top: 0px;
+    border-bottom: 1px solid gray;
+  }
+  .gnb .logo {
+    text-align: center;
+    padding: 10px 0;
+  } 
+  .gnb ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  .gnb li {
+    width: 100px;
+    height: 50px;
+  }
+  .gnb a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: gray;
+    text-align: center;
+    line-height: 50px;
+  }
+  .gnb a:hover {
+    color: darkorange;
+    
+  }
+  #content {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+    margin: 0;
+  }
+  #mid {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    right: 600px;
+  }
+  #logoimage {
+    position: relative;
+    right: 1100px;
+  }
+  #user {
+   position: relative;
+   left: 1100px;
+  }
+
+</style>
+<body>
+ <div>
+  <nav class="gnb">
+    <div class="logo">
+      <ul>
+      <a id=user href="#"><i class="fa-solid fa-user"></i></a>
+      <img alt="logo" id="logoimage" src="../assets/image/logo.png" width="100px" height="50px">
+      <div id="mid">
+      <li><a href="#">랜덤</a></li>
+      <li><a href="#">맛집</a></li>
+      <li><a href="#">레시피</a></li>
+      <li><a href="#">친구야밥먹자</a></li>
+      <li><a href="#">문의</a></li>
+      </div>
+    </ul>
+  </div>
+  </nav>
+  <h2 id="content">레시피</h2>
+
+
+</body>
+</html>
