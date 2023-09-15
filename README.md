@@ -16,3 +16,5 @@ git checkout dev 하면 (main) 이라고 되어있던 부분이 (dev) 라고 바
 (안되면 git remote update
         git checkout 브랜치명)
 git push origin dev 하면 됩니다. 
+
+파일명 공백 한글 금지 
