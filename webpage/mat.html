@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>맛집</title>
+  <style>
+    *{
+        padding:0;
+        margin:0;
+    }
+    ul,ol{
+        list-style:none
+    }
+    a{
+        text-decoration:none;
+        color:black;
+        font-size:15px
+    }
+    nav{
+        width:80%;
+        overflow:hidden;
+        height:100px;
+        background-color:white;
+        margin:0 auto;
+    }
+
+    #nav3 {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+#nav3>a {
+  line-height: 80px;
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+  position: absolute;
+  left: 30px;
+}
+#nav3>div {
+  padding: 0 20px 10 0;
+  height: 30px;
+  position: absolute;
+  right: 30px;
+  top: 45px;
+  transform: translateY(-15px);
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+#nav3>ul {
+  display: inline-block;
+}
+#nav3>ul li {
+  font-weight: bold;
+  font-size: medium;
+  float: left;
+  line-height: 80px;
+  padding: 0 40px;
+}
+
+/* PC 배너1 스타일 */
+.floBanPc1 {
+                width: 100%;
+                height: 200px;
+                background-image: url('https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main-banner_01.png?raw=true'); 
+                /* background-repeat: space;
+                background-size: 100% 660px; */
+                background-repeat: no-repeat;
+                background-size: cover;   
+}
+/* PC 배너2 스타일 */
+.floBanPc2 {
+  position: fixed;
+  top: 204px; /* 윗쪽 끝에서부터의 거리 */
+  right: 0;
+  z-index: 99;
+}
+/* 모바일 배너1 스타일 */
+.floBanMob1 {
+  position: fixed;
+  bottom: 130px; /* 아래 끝에서부터의 거리 */
+  right: 0; /* 오른쪽 끝에서부터의 거리 */
+  z-index: 99;
+}
+/* 모바일 배너2 스타일 */
+.floBanMob2 {
+  position: fixed;
+  bottom: 80px; /* 아래 끝에서부터의 거리 */
+  right: 0; /* 오른쪽 끝에서부터의 거리 */
+  z-index: 99;
+}
+
+    </style> 
+
+</head>
+<body>
+    <nav id="nav3">
+        <a href="#" class="logo"><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_03.png?raw=true" width="100px"></a>
+        <ul>
+          <li><a href="#">랜덤메뉴</a></li>
+          <li><a href="#">레시피</a></li>
+          <li><a href="#">친구야밥먹자</a></li>
+          <li><a href="#">맛집</a></li>
+          <li><a href="#">고객지원</a></li>
+        </ul>
+    
+        <div class="user"><i class="fa-solid fa-circle-user"></i></div>
+      </nav>
+      <!-- PC 배너1 -->
+      <div class="floBanPc1 hidden-md hidden-sm hidden-xs">
+        <a href="링크주소" target="_blank">
+          <img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main-banner_01.png?raw=true" width="1920px">
+        </a>
+      </div>
+      <!-- PC 배너2 -->
+      <div class="floBanPc2 hidden-md hidden-sm hidden-xs">
+        <a href="링크주소" target="_blank">
+          <img src="배너이미지주소" width="가로길이px" height="세로길이px">
+        </a>
+      </div>
+      <!-- 모바일 배너1 -->
+      <div class="floBanMob1 hidden-lg">
+        <a href="링크주소" target="_blank">
+          <img src="배너이미지주소" width="가로길이px" height="세로길이px">
+        </a>
+      </div>
+      <!-- 모바일 배너2 -->
+      <div class="floBanMob2 hidden-lg">
+        <a href="링크주소" target="_blank">
+          <img src="배너이미지주소" width="가로길이px" height="세로길이px">
+        </a>
+      </div>
+
+      </div>
+
+
+
+    <!-- <div class="header">
+        <div class="wrapper">
+        <h1 class="img"><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_03.png?raw=true"></h1>
+        <div class="menu">
+            <ul class="menu-de">
+                <li class="ran-me"><a href="#">랜덤메뉴</a></li>
+                <li class="rec-me"><a href="#">레시피</a></li>
+                <li class="fri-me"><a href="#">친구야밥먹자</a></li>
+                <li class="res-me"><a href="#">맛집</a></li>
+                <li class="help-me"><a href="#">고객지원</a></li>
+            </ul>
+        </div>
+        <div class="user"><i class="fa-solid fa-circle-user"></i></div>
+    </div>
+</div> -->
+
+
+  </body>
+
+
+
+  <!-- 인기 키워드 -->
+  <!-- 맛집top3 -->
+  <!-- 인기 리뷰-->
+  <!-- 최신 맛집 -->
+
+
+</body>
+</html>
