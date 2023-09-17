@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 구글 오토산 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- 부트 스트랩 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        *{
+            font-family: 'Noto Sans KR', sans-serif;
+            color: black;
+        }
+        nav {
+           border-bottom: 1px solid black;    
+           background-color: white;       
+        }
+        #nav_menu {
+            color: black;
+        }
+        #member_login:hover, #member_sign:hover {
+            background-color: #ff8400;
+        
+       }
+        #member_login, #member_sign {
+            border-color:  #ff8400;
+            color: black;
+        } 
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!-- 상단 네비바 -->
+        <nav class="navbar navbar-expand-lg shadow p-3 mb-5 bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_03.png?raw=true" width="100px" height="39px"></a><!--# main 페이지 연결해. 이미지도 경로 바꿔-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse position-absolute top-50 start-50 translate-middle" id="navbarSupportedContent">
+                <ul class="nav nav nav-pills justify-content-center gap-5 fs-4 fw-semibold ">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./navibar copy.html" id="nav_menu">랜덤</a> <!-- 주소 입력해야함-->
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#" id="nav_menu">맛집</a> <!-- 주소 입력해야함-->
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="nav_menu">레시피</a> <!-- 주소 입력해야함-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="nav_menu">친구야밥먹자</a> <!-- 주소 입력해야함-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="nav_menu">문의</a> <!-- 주소 입력해야함-->
+                    </li>                   
+                  </ul>     
+                </div>
+                 <form class="d-flex gap-2" role="search">                 
+                  <button class="btn btn-outline-success float-end fs-6 fw-medium" type="button" id="member_login">로그인</button>
+                  <button class="btn btn-outline-success float-end fs-6 fw-medium" type="button" id="member_sign">회원가입</button>
+                </form>                
+            </div>
+          </nav>
+    </header>
+    <body> 
+ddddddd
+    </body>
+    
+    <!-- 부트스트랩에서 제공하는 jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
