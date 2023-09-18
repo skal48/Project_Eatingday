@@ -1,83 +1,48 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 구글 Noto sans 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- 부트 스트랩 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-  
+    <style>
+        *{
+            font-family: 'Noto Sans KR', sans-serif;
+            color: black;
+        }
+        nav {   
+           background-color: white;
+        }
+        #nav_menu {
+            color: black;
+        }
+        #member_login:hover, #member_sign:hover {
+            background-color: #ff8400;
+        
+       }
+        #member_login, #member_sign {
+            border-color:  #ff8400;
+            color: black;
+        } 
 
-  <title>맛집</title>
-  
-  <style>
 
-
-    *{
-        padding:0;
-        margin:0;
-    }
-    ul,ol{
-        list-style:none
-    }
-    a{
-        text-decoration:none;
-        color:black;
-        font-size:15px
-    }
-    nav{
-        width:80%;
-        overflow:hidden;
-        height:80px;
-        background-color:white;
-        margin:0 auto;
-    }
-
-    .frm_1{
+        /* 여기서부턴 내css */
+        .frm_1{
       width: 1200px;
       margin: auto;
       display: grid;
     }
 
-    #nav3 {
-  width: 100%;
-  position: relative;
-  text-align: center;
-}
-#nav3>a {
-  line-height: 80px;
-  display: block;
-  font-size: 30px;
-  font-weight: 900;
-  position: absolute;
-  left: 30px;
-}
-#nav3>div {
-  padding: 0 20px 10 0;
-  height: 30px;
-  position: absolute;
-  right: 30px;
-  top: 45px;
-  transform: translateY(-15px);
-  border: 2px solid #fff;
-  border-radius: 30px;
-}
-#nav3>ul {
-  display: inline-block;
-}
-#nav3>ul li {
-  font-weight: bold;
-  font-size: medium;
-  float: left;
-  line-height: 80px;
-  padding: 0 40px;
-}
 
 
 .top-text1{
-  color: white;
+  color: black;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 100;
   font-size: 30px;
@@ -92,100 +57,314 @@
 
 }
 
-#subti_s{
+/* 소제목 css */
+#subtitle_s{
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
-  font-size: 5px;
+  font-size: 12px;
 }
 
-#subti_m{
+/* 제목 css */
+#subtitle_m{
   font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
   font-weight: 700;
 }
 
-.key-words{
-  margin: 50px;
+/* 키워드 */
+.key_words{
+  margin-top: 150px;
+  margin-bottom: 100px;
+  
 }
 
 .keyword{
+  margin-top: 100px;
+}
+
+/* 버튼 */
+.btn_1{
+  text-align: left;
+  padding: 0;
   margin-top: 50px;
 }
 
+/* 버튼 */
+.btn_1-1{
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  height: 50px; /* 버튼의 높이 설정 */
+  background-color: white;
+  padding: 0 20px; /* 버튼 내부 여백 설정 */
+  border: 2px solid #FF9933;
+  border-radius: 40px;
+}
+
+.btn_1-1:hover{
+  color: white;
+  background-color: #ff8400;
+}
+
+.search_submit{
+  width: 80px;
+  height: 40px;
+  background-color: #FF9933;
+  color: white;
+  font-weight: 800px;
+  border: none;
+  border-radius: 10px;
+}
+
+
+select{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  float: left;
+  margin-top: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  font-weight: 700px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
 
 .top_picture {
     display: inline-block;
-    padding-top: 180px;
-    width: 100%;
+    padding-top: 100px;
+    width: 1200px;
     height: 450px;
-    background-image: url('https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main-banner_01.png?raw=true'); 
     background-repeat: no-repeat;
-    background-size: cover;        
+    background-size: cover;  
+    margin: auto;   
     }
+.search_submit{
+  margin-top: 20px;
+}
+
+.box1 {
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  width: 390px;
+  height: 150px;
+  color: black;
+  border: 2px solid gray;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  margin-bottom: 15px;
+
+}
+
+.mat_place1{
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  margin: auto;
+
+}
+
+#box1_s #revi_detail{
+  font-size: 13px;
+  text-align: center;
+  position: absolute;
+  top: 59%;
+  color: gray;
+}
 
 
-    </style> 
+.subtitle_more{
+  width: auto;
+  width: 90px;
+  height: auto;
+  height: 30px;
+  font-size: 15px;
+  float: right;
+  background-color: white;
+  border-color: gray;
+  color: gray;
+  border-radius: 20px;
+}
+
+.revi_1{
+  display: flex;
+  justify-content: left; /* 수평 가운데 정렬 */
+  align-items: left; /* 수직 가운데 정렬 */
+  width: 390px;
+  height: 150px;
+  color: black;
+  border: 2px solid gray;
+  background-color: white;
+  text-align: center;
+  position: relative;
+}
+
+.gallery{
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-bottom: 100px;
+}
+.review_box {
+  
+  padding: 2%;
+  border: 2px solid gray;
+}
+
+
+.box1-re .user_re .reviews{
+  display: flex;
+  width: 280px;
+  height: 500px;
+  color: black;
+  border: 2px solid gray;
+  background-color: white;
+  text-align: left;
+  padding-top: 10px;
+}
+
+
+/* font-style */
+.re-title{
+  font-weight: 900;
+}
+.reviews{
+  color: gray;
+}
+
+</style>
 
 </head>
-<body>
-  
-    <nav id="nav3">
-        <a href="#" class="logo"><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_03.png?raw=true" width="100px"></a>
-        <ul>
-          <li><a href="#">랜덤메뉴</a></li>
-          <li><a href="#">레시피</a></li>
-          <li><a href="#">친구야밥먹자</a></li>
-          <li><a href="#">맛집</a></li>
-          <li><a href="#">고객지원</a></li>
-        </ul>
 
-        <div class="user"><i class="fa-solid fa-circle-user"></i></div>
-      </nav>
+<body>
+    <header>
+        <!-- 상단 네비바 -->
+        <nav class="navbar navbar-expand-lg shadow p-3 mb-5 bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_03.png?raw=true" width="100px" height="39px"></a><!--# main 페이지 연결해. 이미지도 경로 바꿔-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse position-absolute top-50 start-50 translate-middle" id="navbarSupportedContent">
+                <ul class="nav nav nav-pills justify-content-center gap-5 fs-4 fw-semibold ">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./navibar copy.html" id="nav_menu">랜덤</a> <!-- 주소 입력해야함-->
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#" id="nav_menu">맛집</a> <!-- 주소 입력해야함-->
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="nav_menu">레시피</a> <!-- 주소 입력해야함-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="nav_menu">친구야밥먹자</a> <!-- 주소 입력해야함-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="nav_menu">문의</a> <!-- 주소 입력해야함-->
+                    </li>                   
+                  </ul>     
+                </div>
+                 <form class="d-flex gap-2" role="search">                 
+                  <button class="btn btn-outline-success float-end fs-6 fw-medium" type="button" id="member_login">로그인</button>
+                  <button class="btn btn-outline-success float-end fs-6 fw-medium" type="button" id="member_sign">회원가입</button>
+                </form>                
+            </div>
+          </nav>
+    </header>
+    <body> 
+      <div class="back-gr">
+      <div class="frm_1">
       <div class="top_picture">
-        <div class="frm_1">
         <div class="top-text1" style="text-align : left;"><p>내 주변에 맛집이 있을까?</p></div>
         <div class="top-text2" style="text-align: left;"><p>위치로 맛집을 검색해보세요!</p></div>
-          <div id="map1">
             <select name="di">
               <option value="">광역시/도</option>
+              <option value="seoul">서울</option>
+              <option value="geongi">경기도</option>
+              <option value="jeonranam">전라남도</option>
+              <option value="jeonrabuk">전라북도</option>
+              <option value="jeju">제주도</option>
             </select>
             <select name="re">
               <option value="">시/군구</option>
             </select>
             <button type="submit" class="search_submit">
-              자두
+              검색
             </button>
-          </div>
-      </div>      
+      </div>    
+    </div>  
 </div>
 <div class="frm_1">
-  <div><img src=""</div>
-  <div class="key-words">
-    <div id="subti_s"><p>성격급한 한국인이신가요?</p></div>
-    <div id="subti_m"><p>키워드별맛집</p></div>
-    <div>
-      <table class="keyword">
-        <tbody>
-          <tr>#어쩌구</tr>
-          <tr>#어쩌구</tr>
-          <tr>#어쩌구</tr>
-          <tr>#어쩌구</tr>
-        </tbody>
-
-      </table>
-
+  <div class="key_words">
+    <div id="subtitle_s">성격급한 한국인이신가요?</div>
+    <div id="subtitle_m">키워드별맛집</div>
+  
+      <div class="btn_1">
+        <div class="btn_1_key">
+        <button type="button" class="btn_1-1">#파스타</button>
+        <button type="button" class="btn_1-1">#우동</button>
+        <button type="button" class="btn_1-1">#잔치국수</button>
+        <button type="button" class="btn_1-1">#라멘맛집</button>
+        <button type="button" class="btn_1-1">#고든램지버거</button>
+        <button type="button" class="btn_1-1">#성수동</button>
     </div>
   </div>
-  <div class="key-words">
-    <div id="subti_s">성격급한 한국인이신가요?</div>
-    <div id="subti_m">키워드별맛집</div>
+</div>
+</div>
+
+<!-- 맛집리스트 -->
+<div class="frm_1">
+  <div class="key_words">
+    <div id="subtitle_s">최고인기 맛집 리스트에요!</div>
+    <div id="subtitle_m">인기맛집 TOP5<button type="button" class="subtitle_more">더보기  ></button></div>
+    
+  </div>
+<div class="mat_place1">
+    <div class="box1">최고다, 우동파스타<div id="box1_s">이렇게 맛있다고?</div></div>
+    <div class="box1">떡볶이 성수동 맛집<div id="box1_s">이렇게 맛있다고?</div></div>
+    <div class="box1">샤인머스캣 디저트 맛집<div id="box1_s">이렇게 맛있다고?</div></div>
+</div>
+<div class="mat_place1">
+  <div class="box1">돈까스 맛집<div id="box1_s">이렇게 맛있다고?</div>
+  </div>
+  <div class="box1">최고다, 우동파스타<div id="box1_s">이렇게 맛있다고?</div></div>
+  <div class="box1">최고다, 우동파스타<div id="box1_s">이렇게 맛있다고?</div></div>
+</div>
+
+<!-- 최신 맛집 -->
+<div class="frm_1">
+  <div class="key_words">
+    <div id="subtitle_s">최근에 나온 따끈따끈한 맛집리스트에요!</div>
+    <div id="subtitle_m">최신업데이트 맛집 TOP5<button type="button" class="subtitle_more">더보기  ></button></div>
   </div>
 
+  <div class="mat_place1">
+    <div class="box1">최고다, 우동파스타<div id="box1_s">이렇게 맛있다고?</div></div>
+    <div class="box1">떡볶이 성수동 맛집<div id="box1_s">이렇게 맛있다고?</div></div>
+    <div class="box1">샤인머스캣 디저트 맛집<div id="box1_s">이렇게 맛있다고?</div></div>
 </div>
-  <!-- 인기 키워드 -->
-  <!-- 맛집top3 -->
-  <!-- 인기 리뷰-->
-  <!-- 최신 맛집 -->
 
+<div class="frm_1">
+  <div class="key_words">
+    <div id="subtitle_s">리뷰를 보고 가게를 확인해보자.</div>
+    <div id="subtitle_m">최신 리뷰<button type="button" class="subtitle_more">더보기  ></button></div>
+  </div>   
+  <div class="gallery">
+      <div class="review_box"><div id="gage">가게1</div><div class="box1-re"></div><div class="re-title">와 미친거아닌가</div><div class="user_re">whtjqls0504</div><div class="reviews">너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어 </div></div>
+      <div class="review_box"><div id="gage">가게1</div><div class="box1-re"></div><div class="re-title">앞으론 여기만 시켜먹을거임</div><div class="user_re">whtjqls0504</div><div class="reviews">너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어 </div></div>
+      <div class="review_box"><div id="gage">가게1</div><div class="box1-re"></div><div class="re-title">아 ㅋㅋ</div><div class="user_re">whtjqls0504</div><div class="reviews">너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어 </div></div>
+      <div class="review_box"><div id="gage">가게1</div><div class="box1-re"></div><div class="re-title">너무 맛있구요</div><div class="user_re">whtjqls0504</div><div class="reviews">너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어너무맛있어 </div></div>
+  </ul>  
+</div>
 
+    </body>
+    
+    <!-- 부트스트랩에서 제공하는 jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
