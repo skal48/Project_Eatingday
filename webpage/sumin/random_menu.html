@@ -47,15 +47,24 @@
                 box-sizing: content-box;
                 font-size: 13px;
             }
-          #random_label{
-            text-align: center;
-          }
+            ul {
+                padding-top: 50px;
+                padding-left: 0;               
+                text-align: center;
+                font-weight: 600;
+            }
+            li {
+                list-style-type: none;
+                display: inline-block;
+                            
+            }
+
             
       </style>
       <div class="row" id="main_layout">
         <div class="col"></div>
         <div class="col-8"> <!-- 여기서 작성 -->
-
+          <!-- 랜덤 음식 나오는 곳  -->
           <div class="container-fluid " id="random" >
             <form class="d-flex" >
               <div class="form-floating me-3 w-75">
@@ -65,6 +74,35 @@
             <button class="btn" type="submit" id="btm_random">돌려돌려</button>
             </form>
           </div>
+
+          
+          <!-- 어떤 메뉴 나왔는지 순차적으로 나타나게 (최대 3개) -->
+         <div>
+          <ul>
+              <li><div class="card" style="width: 16rem;">
+                  <img src="https://github.com/skal48/Project_Eatingday/blob/dev/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202023-09-03%20015711.png?raw=true" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <p class="card-text">메뉴1</p>
+                  </div>
+                </div></li>
+
+              <li><div class="card" style="width: 16rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <p class="card-text">메뉴2</p>
+                  </div>
+                </div></li>
+
+              <li><div class="card" style="width: 16rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <p class="card-text">메뉴3</p>
+                  </div>
+                </div></li>
+          </ul>
+         </div>
+
+
 
         </div>
         <div class="col"></div>
