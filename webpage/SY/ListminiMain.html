@@ -22,16 +22,15 @@
             background-color: white;
         }
         .title h3 {
-          margin-bottom: 30px;
           text-align: center;
           padding: 15px;
-          
-        }
-        #top-nav {
-          border-bottom: 1px solid black;
+          margin-bottom: 30px;
         }
         #nav_menu {
             color: black;
+        }
+        #top-nav {
+          border-bottom: 1px solid black;
         }
         #member_login:hover, #member_sign:hover {
             background-color: #ff8400;
@@ -41,17 +40,10 @@
             border-color:  #ff8400;
             color: black;
         } 
-        .table {
-          margin-top: 10px;
-          
-        }
         .btn-warning {
           float: right;
         }
-        .textbar {
-          width: 80%;
-        }
-
+        
     </style>
 
 </head>
@@ -59,7 +51,7 @@
 <body>
     <header>
         <!-- 상단 네비바 -->
-        <nav class="navbar navbar-expand-lg " id="top-nav">
+        <nav class="navbar navbar-expand-lg" id="top-nav">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_03.png?raw=true" width="100px" height="39px"></a><!--# main 페이지 연결해. 이미지도 경로 바꿔-->
               <div class="collapse navbar-collapse position-absolute top-50 start-50 translate-middle" id="navbarSupportedContent">
@@ -78,12 +70,19 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="nav_menu">문의</a> <!-- 주소 입력해야함-->
-                    </li>                   
+                    </li>         
                   </ul>     
                 </div>
-                <button type="button" class="btn fa-xl"  aria-expanded="false">
-                  <i class="fa-solid fa-circle-user fa-2xl" style="color: #f45400;"></i>
-                </button>              
+                <div class="btn-group">
+                  <button type="button" class="btn dropdown-toggle fa-xl" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-circle-user fa-2xl" style="color: #f45400;"></i>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">로그아웃</a></li>  
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">내정보</a></li>
+                  </ul>
+                </div>           
             </div>
           </nav>
           <div class="title">
@@ -96,13 +95,28 @@
           <div class="col">
             1 of 3
           </div>
-          <div class="col-6">
-           
-          </div>
+          <div class="col-6me">
+          <div class="col-6 mx-auto">
+            <!-- 제목,글 쓰는란 -->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"></label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="제목을 입력하세요.">
+            </div>
+            <div class="mb-3">
+              <label for="formFileMultiple" class="form-label"></label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="15"></textarea>
+              <button type="button" class="btn btn-warning">등록</button>
+            </div>
+        </div>
+        </div>
           <div class="col">
             3 of 3
           </div>
-        </div>
+        
 
 
       

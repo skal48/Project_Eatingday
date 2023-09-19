@@ -27,11 +27,11 @@
           padding: 15px;
           
         }
-        #top-nav {
-          border-bottom: 1px solid black;
-        }
         #nav_menu {
             color: black;
+        }
+        #top-nav {
+          border-bottom: 1px solid black;
         }
         #member_login:hover, #member_sign:hover {
             background-color: #ff8400;
@@ -59,7 +59,7 @@
 <body>
     <header>
         <!-- 상단 네비바 -->
-        <nav class="navbar navbar-expand-lg " id="top-nav">
+        <nav class="navbar navbar-expand-lg" id="top-nav">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="https://github.com/skal48/Project_Eatingday/blob/dev/main_images/eatingday_main_03.png?raw=true" width="100px" height="39px"></a><!--# main 페이지 연결해. 이미지도 경로 바꿔-->
               <div class="collapse navbar-collapse position-absolute top-50 start-50 translate-middle" id="navbarSupportedContent">
@@ -96,9 +96,82 @@
           <div class="col">
             1 of 3
           </div>
-          <div class="col-6">
-           
+          <div class="col-6me">
+          <div class="col-6 mx-auto">
+            <!-- 새글작성 버튼 -->
+            <button type="button" class="btn btn-warning">새글작성</button>
+            <!-- 게시글 목록 -->
+            <table class="table table-hover">
+              <thead>
+                <tr class="table-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">제목</th>
+                  <th scope="col">작성자</th>
+                  <th scope="col">조회수</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- 작성자/제목 검색창-->
+            <div class="input-group mb-3">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">검색</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">작성자</a></li>
+                <li><a class="dropdown-item" href="#">제목</a></li>
+              </ul>
+              <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            </div>
+            </div>
+            <!-- 아래 쪽수 -->
+            <nav aria-label="Page navigation example ">
+              <ul class="pagination pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
+        </div>
           <div class="col">
             3 of 3
           </div>
